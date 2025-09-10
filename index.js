@@ -4,8 +4,8 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 function generatePassword() {
   let password1 = "";
   let password2 = "";
-  let passwordEl1 = document.getElementById("password-el-1");
-  let passwordEl2 = document.getElementById("password-el-2");
+  let passwordEl1 = document.querySelector("#password-el-1");
+  let passwordEl2 = document.querySelector("#password-el-2");
   for (let i = 0; i < 13; i++) {
     let index1 = Math.floor(Math.random() * characters.length);
     let index2 = Math.floor(Math.random() * characters.length);
